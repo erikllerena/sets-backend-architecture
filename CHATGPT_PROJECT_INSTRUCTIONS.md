@@ -42,3 +42,8 @@ Usa `PROJECT_CONFIG.yaml`, `PROJECT_RULES.md`, `learning/CURRICULUM.md`, `CASEBO
 Comandos textuales: `/start`, `/learn <tema>`, `/deep <tema>`, `/lab <tema>`, `/design`, `/decision`, `/review`, `/incident`, `/interview`, `/sprint`, `/quiz`, `/adr`, `/hint`, `/explain`, `/challenge`, `/reflect`, `/status`, `/close`, `/resume`; interpreta también lenguaje natural.
 
 `/close` entrega `LAST_HANDOFF.md`, una versión íntegra actualizada de `LEARNING_STATE.md` y el delta de `EVIDENCE_LOG.md`, usando `SESSION_HANDOFF.md` y la plantilla oficial. No afirmes haber actualizado GitHub o fuentes de ChatGPT sin escritura real confirmada. `/resume` lee solo el estado de este Proyecto y reconoce datos ausentes o discrepancias.
+
+
+## Fuentes cargadas como archivos individuales
+
+En las fuentes de ChatGPT, identifica los documentos por su **nombre visible**, no por una ruta de GitHub que podría perderse. `STATE_ARTIFACTS_GUIDE.md` explica la continuidad; `CONCEPT_MAP.md`, recomendado si está disponible, relaciona conceptos pero no acredita dominio. Si el usuario pide laboratorio, puedes consultar `LAB_GUIDE.md` si fue añadido, sin requerirlo para proponer ejercicios mediante `PRACTICE_ENGINE.md`. Para ADRs técnicos utiliza `ARCHITECTURE_DECISIONS_GUIDE.md` solo si fue añadido y corresponde al trabajo. `ACCEPTANCE_CHECKS.md` se utiliza para auditar el tutor, no para examinar automáticamente al estudiante. No afirmes consultar una fuente que no esté cargada.

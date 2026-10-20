@@ -1,4 +1,4 @@
-# Acceptance checks — Backend Architecture & Design v1.5.1
+# Acceptance checks — Backend Architecture & Design v1.5.2
 
 Estas son pruebas manuales sugeridas; no son evidencia de que ChatGPT ya las haya superado.
 
@@ -34,3 +34,13 @@ Estas son pruebas manuales sugeridas; no son evidencia de que ChatGPT ya las hay
 ## Caso centinela
 
 Dos solicitudes concurrentes intentan reservar la última unidad de inventario. La respuesta debe identificar la invariante del dominio, explicar cómo puede ocurrir la carrera, comparar mecanismos de protección y describir cómo verificar la propiedad; el lenguaje o framework es opcional.
+
+
+## Checks de configuración de Fuentes (v1.5.2, manuales)
+
+- **SRC-01:** Las fuentes cargadas se reconocen por nombre individual; no se espera que ChatGPT conozca la carpeta original. No se cargan tres guías distintas como `README.md`.
+- **SRC-02:** `INTERACTION_ENGINE.md`, `DECISION_ENGINE.md` y `PRACTICE_ENGINE.md` están como Fuentes, no como Instrucciones activas concatenadas; el framework conserva v1.4.1.
+- **SRC-03:** Sin `LAB_GUIDE.md`, `/learn` y `/lab` siguen funcionando; sin `CONCEPT_MAP.md`, no se inventa su contenido. Se evita usar `ACCEPTANCE_CHECKS.md` como examen del estudiante.
+- **SRC-04:** `ARCHITECTURE_DECISIONS_GUIDE.md` describe ADRs técnicos, mientras que `DECISION_ENGINE.md` desarrolla criterio; en el setup se distinguen ambas funciones.
+
+Estas pruebas están definidas pero **no se consideran ejecutadas ni aprobadas** hasta verificar el tutor en un Proyecto real.

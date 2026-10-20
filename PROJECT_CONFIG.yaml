@@ -6,7 +6,7 @@ framework:
   project_domain: Backend Architecture & Design
   objective_role: Backend Architect / Senior Backend Engineer
 program:
-  version: 1.5.1
+  version: 1.5.2
   repository: sets-backend-architecture
   competency_namespace: B
   scope: >-

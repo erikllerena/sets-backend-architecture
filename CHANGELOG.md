@@ -1,5 +1,15 @@
 # Changelog — SETS Backend Architecture & Design
 
+## 1.5.2 — 2026-10-20 (fuentes individuales de ChatGPT)
+
+- Renombradas las guías `state/README.md`, `labs/README.md` y `decisions/README.md` para que su finalidad sea inequívoca fuera de GitHub.
+- Auditadas las fuentes de `SETUP_CHATGPT.md` y su correspondencia con SETS Framework v1.4.1; motores INTERACTION/DECISION/PRACTICE ya estaban presentes.
+- `CONCEPT_MAP.md` recomendado al inicio pero no obligatorio; `INTERVIEW_SPRINT.md` solo cuando se active entrevista.
+- Guías de laboratorios y ADRs técnicos, pruebas de aceptación y notas de actualización como documentos bajo demanda. No se agregó una carpeta de práctica ficticia.
+- Diferenciada la guía de decisiones técnicas (ADRs) del `DECISION_ENGINE.md` pedagógico.
+- Mantenidos currículo, casebook y registros de estado/evidencias sin modificar; pruebas del tutor documentadas, no ejecutadas.
+
+
 
 ## 1.5.1 — 2026-10-19 (aprendizaje abierto sin deriva de alcance)
 

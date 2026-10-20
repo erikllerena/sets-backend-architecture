@@ -9,3 +9,6 @@
 Flujo: `/close` → revisar archivos propuestos → guardar en Git → actualizar fuentes del Proyecto de ChatGPT → abrir otro chat del mismo Proyecto y usar `/resume`. No hay sincronización automática.
 
 El programa comienza limpio por decisión del estudiante. No importar progreso de otras especializaciones ni reemplazar evidencia real sin respaldo.
+
+
+Este archivo se llama `STATE_ARTIFACTS_GUIDE.md` para identificarlo de forma inequívoca al subirlo individualmente como fuente de ChatGPT.
