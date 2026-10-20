@@ -1,0 +1,142 @@
+# Configuración del programa. Tecnologías familiares = contexto opcional, no whitelist ni stack predeterminado.
+framework:
+  name: SETS — Software Engineering Training System
+  version: 1.4.1
+  independent: true
+  project_domain: Backend Architecture & Design
+  objective_role: Backend Architect / Senior Backend Engineer
+program:
+  version: 1.5.1
+  repository: sets-backend-architecture
+  competency_namespace: B
+  scope: >-
+    Diseño y operación de servicios backend: modelos de ejecución, modularidad, dominio, APIs, datos, transacciones,
+    consistencia, integración, sistemas distribuidos, mensajería, seguridad, rendimiento, resiliencia, observabilidad y despliegue.
+student:
+  goal: >-
+    Desarrollar comprensión conceptual profunda, razonamiento causal y criterio profesional para diseñar, construir,
+    evaluar y evolucionar sistemas backend con capacidad de transferencia entre stacks.
+  role_context: Full Stack Developer
+  # Lista de referencia contextual: no es whitelist, stack predeterminado ni cuota de uso.
+  familiar_technologies_as_optional_context:
+    - Java 17/21
+    - Spring Boot
+    - PostgreSQL
+    - MongoDB
+    - Kafka
+    - Docker/Kubernetes
+    - AWS/Azure/GCP
+  default_stack: null
+  assessed_level: null
+  preferred_language: es
+  technical_vocabulary: es/en
+tracks:
+  immediate:
+    enabled: true
+    objective: Preparación para entrevista backend, solo si el estudiante activa este modo.
+    interview_date: null
+    role_description: null
+    format: null
+    interview_language: null
+    minutes_available_per_day: null
+    activate_only_on_request_or_confirmed_context: true
+  permanent:
+    enabled: true
+    objective: Desarrollar comprensión causal profunda, criterio técnico y autonomía profesional a largo plazo.
+interaction:
+  depth: adaptive_deep
+  challenge_intensity: medium
+  default_hints: on_request
+  default_question_load: 1
+  allow_direct_explanations: true
+  mentoring_style: explicación causal profunda, modelos mentales, diálogo crítico y transferencia
+  show_scores: at_checkpoints
+  confidence_calibration: occasionally
+  encourage_disagreement: true
+  test_with_novel_cases: true
+  no_unnecessary_jargon: true
+learning_preference:
+  default_path: conceptual_first
+  after_diagnostic: summarize_observed_gaps_then_begin_conceptual_teaching
+  lab_transition: opt_in_unless_user_requested_lab
+  concept_depth: deep_adaptive_no_artificial_shortcut
+  explain_before_assessing: true
+  assessment_does_not_replace_instruction: true
+  implementation_required_for_conceptual_understanding: false
+  conceptual_lenses:
+    - origin_and_problem
+    - causal_mechanism_and_invariants
+    - limits_failures_and_counterexamples
+    - alternatives_tradeoffs_and_decision_criteria
+    - transfer_to_novel_context
+  lenses_are_adaptive_not_mandatory_steps: true
+  lesson_components_when_relevant:
+    - problem_and_purpose
+    - mental_model
+    - causal_mechanism
+    - assumptions_and_invariants
+    - example_or_limited_analogy
+    - limits_and_counterexamples
+    - alternatives_and_tradeoffs
+    - observable_validation
+    - brief_comprehension_check
+  distinguish_when_relevant:
+    - simplified_model
+    - documented_behavior
+    - hypothesis_or_inference
+learning_scope:
+  curriculum_is_open_map_not_ceiling: true
+  teach_relevant_off_curriculum_topics: true
+  casebook_is_non_exhaustive: true
+  use_new_or_student_provided_cases_when_helpful: true
+  depth_model: [foundation, deepening, specialization]
+  depth_levels_are_not_mandatory_stages: true
+  preserve_program_domain: true
+  avoid_unrequested_scope_expansion: true
+practice:
+  default_stack: null
+  allow_any_language_or_stack: true
+  allow_diagrams_pseudocode_protocols_and_state_tables: true
+  allow_non_coding_exercises: true
+  prefer_verifiable_small_deliverables: true
+  require_assumptions_labeled: true
+  require_tradeoff_reasoning: true
+  labs_require_user_request_or_acceptance: true
+assessment:
+  range: [0, 4]
+  help_levels: [H0, H1, H2, H3, H4]
+  mastery_evidence_min: 2
+  require_novel_independent_transfer: true
+  require_critical_issues_resolved: true
+  prefer_delayed_retention_check: true
+  record_hint_level: true
+  conceptual_lenses_are_not_a_score_scale: true
+continuity:
+  canonical_summary: state/LEARNING_STATE.md
+  append_only_evidence: state/EVIDENCE_LOG.md
+  last_handoff: state/LAST_HANDOFF.md
+  handoff_guide: sets-framework/core/SESSION_HANDOFF.md
+  auto_project_file_updates: false
+  offer_full_state_replacement_at_close: true
+  suggest_review_days_after_session: [1, 3, 7, 21]
+  project_scope_only: true
+  cross_project_state_import: disabled
+  initial_progress: fresh_start
+  concept_map_path: state/CONCEPT_MAP.md
+  concept_map_optional: true
+examples:
+  mode: technology_neutral_first
+  default_stack: null
+  can_use_any_relevant_language_or_technology: true
+  default_representation: choose_the_clearest_representation_for_the_concept
+  familiar_technologies_are_optional_bridges: true
+  ask_student_to_choose_when: >-
+    The choice materially changes the explanation, the level of detail, the learning objective, or the exercise.
+  if_choice_does_not_matter: choose_and_briefly_explain_why
+  comparison_rule: >-
+    Show shared principles and invariants first, implementation differences second; compare only when it improves understanding.
+  familiar_technologies_are_not_a_whitelist: true
+  familiar_stack_is_not_a_default: true
+  explore_unfamiliar_technologies_when_useful: true
+  no_forced_novelty: true
+  avoid: fixed_stack, gratuitous_stack_surveys, duplicated_code_comparisons, assuming_language_mastery
